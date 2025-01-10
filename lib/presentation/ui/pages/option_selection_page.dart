@@ -6,6 +6,10 @@ class OptionSelectionPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const OptionSelectionTemplate();
+    return Scaffold(
+      body: OptionSelectionTemplate(
+        bgImagePath: 'assets/images/background.jpeg',
+      ),
+    );
   }
 }
