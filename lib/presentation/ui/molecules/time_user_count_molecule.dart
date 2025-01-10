@@ -5,22 +5,28 @@ import '../atoms/texts/no_of_users_text.dart';
 import '../atoms/texts/time_text.dart';
 
 class TimeAndUserCountMolecule extends StatelessWidget {
-  final String assetPath,timeText,users;
+  final String timeIconPath, timeText, usersCount, userIconPath;
 
-  const TimeAndUserCountMolecule({required this.assetPath, required this.users, super.key, required this.timeText});
+  const TimeAndUserCountMolecule({
+    super.key,
+    required this.timeIconPath,
+    required this.timeText,
+    required this.usersCount,
+    required this.userIconPath,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SubHeaderIcon(assetPath: assetPath),
+        SubHeaderIcon(assetPath: timeIconPath),
         const SizedBox(width: 4),
         TimeText(text: timeText),
         const SizedBox(width: 16),
-        SubHeaderIcon(assetPath: assetPath),
+        SubHeaderIcon(assetPath: userIconPath),
         const SizedBox(width: 4),
-        NoOfUsersText(text: users),
+        NoOfUsersText(text: usersCount),
       ],
     );
   }
