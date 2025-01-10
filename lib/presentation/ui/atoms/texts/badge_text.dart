@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../styles.dart';
 import '../text_atom.dart';
 
 class BadgeText extends StatelessWidget {
@@ -11,6 +12,7 @@ class BadgeText extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextAtom(
       text: text,
+      style: AppTextStyles.badgeTextStyle,
     );
   }
 }

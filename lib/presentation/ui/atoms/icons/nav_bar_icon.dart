@@ -9,7 +9,7 @@ class NavBarIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image(
       image: AssetImage(assetPath),
-      height: 28,
+      height: 40,
     );
   }
 }

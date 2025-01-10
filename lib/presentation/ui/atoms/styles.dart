@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'colors.dart';
+
 class AppTextStyles {
   static TextStyle get headerTextStyle => TextStyle(
         fontSize: 34,
@@ -13,4 +15,10 @@ class AppTextStyles {
           ),
         ],
       );
+
+  static TextStyle get badgeTextStyle => TextStyle(
+    color: AppColors.badgeFG,
+    fontSize: 10,
+    fontWeight: FontWeight.bold,
+  );
 }
