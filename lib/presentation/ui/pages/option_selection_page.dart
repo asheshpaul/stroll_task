@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import '../atoms/colors.dart';
-import '../atoms/icons/nav_bar_icon.dart';
-import '../atoms/texts/badge_text.dart';
+
 import '../organisms/bottom_navbar_section.dart';
 import '../templates/option_selection_template.dart';
 

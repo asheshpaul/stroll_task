@@ -27,7 +27,7 @@ class NavBarItemMolecule extends StatelessWidget {
         ),
         if (badgeCount > 0)
           Positioned(
-            right: -6,
+            right: -16,
             top: -6,
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 8),
