@@ -21,6 +21,12 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
   );
 
+  static TextStyle optionTextStyle(Color? color) => TextStyle(
+    color: color ?? AppColors.optionFG,
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+  );
+
   static TextStyle get badgeTextStyle => TextStyle(
     color: AppColors.badgeFG,
     fontSize: 10,

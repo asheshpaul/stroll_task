@@ -23,6 +23,13 @@ class OptionSelectionPage extends StatelessWidget {
     final String userIconPath = 'assets/images/users.png';
     final String usersCount = '103';
 
+    final Map<String, String> questions = {
+      'A': 'The peace in the early mornings',
+      'B': 'The magical golden hours',
+      'C': 'Wind-down time after dinners',
+      'D': 'The serenity past midnight',
+    };
+
     return Scaffold(
       body: OptionSelectionTemplate(
         bgImagePath: 'assets/images/background.jpeg',
@@ -35,6 +42,7 @@ class OptionSelectionPage extends StatelessWidget {
         nameAgeText: 'Angelina, 28',
         questionText: 'What is your favorite time of the day?',
         answerText: '“Mine is definitely the peace in the morning.”',
+        questions: questions,
       ),
       bottomNavigationBar: BottomNavbarSection(
         iconPaths: iconPaths,

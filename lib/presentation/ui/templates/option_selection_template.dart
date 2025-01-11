@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stroll_task/presentation/ui/organisms/header_section.dart';
 import '../organisms/base_content_section.dart';
+import '../organisms/option_selection_section.dart';
 import '../organisms/profile_with_question_section.dart';
 
 class OptionSelectionTemplate extends StatelessWidget {
@@ -14,6 +15,7 @@ class OptionSelectionTemplate extends StatelessWidget {
       nameAgeText,
       questionText,
       answerText;
+  final Map<String, String> questions;
 
   const OptionSelectionTemplate({
     super.key,
@@ -27,6 +29,7 @@ class OptionSelectionTemplate extends StatelessWidget {
     required this.nameAgeText,
     required this.questionText,
     required this.answerText,
+    required this.questions,
   });
 
   @override
@@ -49,6 +52,7 @@ class OptionSelectionTemplate extends StatelessWidget {
           questionText: questionText,
           answerText: answerText,
         ),
+        OptionSelectionSection(questions: questions),
       ],
     );
   }
