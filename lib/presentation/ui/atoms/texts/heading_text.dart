@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../styles.dart';
 import '../text_atom.dart';
 
 class HeadingText extends StatelessWidget {
@@ -10,7 +11,7 @@ class HeadingText extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextAtom(
       text: text,
-      /*style: headerTextStyle,*/
+      style: AppTextStyles.headerTextStyle,
     );
   }
 }

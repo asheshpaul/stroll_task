@@ -11,9 +11,16 @@ class HeaderMolecule extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         HeadingText(text: text),
-        IconAtom(icon: Icons.keyboard_arrow_down),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: IconAtom(
+            icon: Icons.keyboard_arrow_down,
+            size: 32,
+          ),
+        ),
       ],
     );
   }

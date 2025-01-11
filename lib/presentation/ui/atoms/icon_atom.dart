@@ -16,6 +16,10 @@ class IconAtom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Icon(icon, color: color ?? AppColors.white, size: size ?? kDefaultFontSize);
+    return Icon(
+      icon,
+      color: color ?? AppColors.badgeBG,
+      size: size ?? kDefaultFontSize,
+    );
   }
 }

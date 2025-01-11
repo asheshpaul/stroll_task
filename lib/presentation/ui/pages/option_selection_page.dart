@@ -17,9 +17,20 @@ class OptionSelectionPage extends StatelessWidget {
 
     final List<int> badges = [0, 5, 10, 0];
 
+    final String headerText = 'Stroll Bonfire';
+    final String timeIconPath = 'assets/images/time.png';
+    final String timeText = '22h 00m';
+    final String userIconPath = 'assets/images/users.png';
+    final String usersCount = '103';
+
     return Scaffold(
       body: OptionSelectionTemplate(
         bgImagePath: 'assets/images/background.jpeg',
+        headerText: headerText,
+        timeIconPath: timeIconPath,
+        timeText: timeText,
+        userIconPath: userIconPath,
+        usersCount: usersCount,
       ),
       bottomNavigationBar: BottomNavbarSection(
         iconPaths: iconPaths,
