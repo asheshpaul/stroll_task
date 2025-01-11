@@ -7,6 +7,16 @@ class ProfileIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CircleAvatar(backgroundImage: AssetImage(assetPath));
+    return Container(
+      width: 64,
+      height: 64,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage(assetPath),
+          fit: BoxFit.fill,
+        ),
+        shape: BoxShape.circle,
+      ),
+    );
   }
 }

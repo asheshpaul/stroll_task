@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:stroll_task/presentation/ui/atoms/texts/answer_text.dart';
-import 'package:stroll_task/presentation/ui/atoms/texts/question_text.dart';
-import 'package:stroll_task/presentation/ui/molecules/profile_card.dart';
+
+import '../atoms/icons/profile_icon.dart';
+import '../atoms/texts/answer_text.dart';
+import '../atoms/texts/name_age_text.dart';
+import '../atoms/texts/question_text.dart';
 
 class ProfileWithQuestionSection extends StatelessWidget {
   final String profileIconPath, nameAgeText, questionText, answerText;
@@ -18,9 +20,35 @@ class ProfileWithQuestionSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ListTile(
-          leading: ProfileCard(assetPath: profileIconPath, text: nameAgeText),
-          title: QuestionText(text: questionText),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 32.0),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  ProfileIcon(assetPath: profileIconPath),
+                ],
+              ),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: NameAgeText(text: nameAgeText),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 16.0, horizontal: 32),
+                      child: QuestionText(text: questionText),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
         Center(child: AnswerText(text: answerText)),
       ],

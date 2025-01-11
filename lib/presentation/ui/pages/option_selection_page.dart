@@ -31,6 +31,10 @@ class OptionSelectionPage extends StatelessWidget {
         timeText: timeText,
         userIconPath: userIconPath,
         usersCount: usersCount,
+        profileIconPath: 'assets/images/profile.jpeg',
+        nameAgeText: 'Angelina, 28',
+        questionText: 'What is your favorite time of the day?',
+        answerText: '“Mine is definitely the peace in the morning.”',
       ),
       bottomNavigationBar: BottomNavbarSection(
         iconPaths: iconPaths,

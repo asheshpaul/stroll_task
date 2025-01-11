@@ -11,6 +11,11 @@ class QuestionText extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextAtom(
       text: text,
+      style: TextStyle(
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+        color: Colors.white
+      ),
     );
   }
 }

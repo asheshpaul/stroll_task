@@ -16,6 +16,11 @@ class AppTextStyles {
         ],
       );
 
+  static TextStyle get nameAgeTextStyle => TextStyle(
+    color: AppColors.white,
+    fontWeight: FontWeight.bold,
+  );
+
   static TextStyle get badgeTextStyle => TextStyle(
     color: AppColors.badgeFG,
     fontSize: 10,
