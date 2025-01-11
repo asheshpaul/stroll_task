@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:stroll_task/presentation/ui/organisms/header_section.dart';
+
+import '../organisms/action_footer_section.dart';
 import '../organisms/base_content_section.dart';
+import '../organisms/header_section.dart';
 import '../organisms/option_selection_section.dart';
 import '../organisms/profile_with_question_section.dart';
 
@@ -14,7 +16,8 @@ class OptionSelectionTemplate extends StatelessWidget {
       profileIconPath,
       nameAgeText,
       questionText,
-      answerText;
+      answerText,
+      actionInstruction;
   final Map<String, String> questions;
 
   const OptionSelectionTemplate({
@@ -30,6 +33,7 @@ class OptionSelectionTemplate extends StatelessWidget {
     required this.questionText,
     required this.answerText,
     required this.questions,
+    required this.actionInstruction,
   });
 
   @override
@@ -53,6 +57,7 @@ class OptionSelectionTemplate extends StatelessWidget {
           answerText: answerText,
         ),
         OptionSelectionSection(questions: questions),
+        ActionFooterSection(text: actionInstruction),
       ],
     );
   }

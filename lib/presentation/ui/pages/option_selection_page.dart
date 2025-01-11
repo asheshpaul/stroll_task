@@ -30,6 +30,9 @@ class OptionSelectionPage extends StatelessWidget {
       'D': 'The serenity past midnight',
     };
 
+    final String actionInstruction =
+        'Pick your option.\nSee who has a similar mind.';
+
     return Scaffold(
       body: OptionSelectionTemplate(
         bgImagePath: 'assets/images/background.jpeg',
@@ -43,6 +46,7 @@ class OptionSelectionPage extends StatelessWidget {
         questionText: 'What is your favorite time of the day?',
         answerText: '“Mine is definitely the peace in the morning.”',
         questions: questions,
+        actionInstruction: actionInstruction,
       ),
       bottomNavigationBar: BottomNavbarSection(
         iconPaths: iconPaths,
